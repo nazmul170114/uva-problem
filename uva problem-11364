@@ -1,0 +1,39 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int t,n,array[100],i,j,minimal_distance;
+    scanf("%d",&t);
+    for(i=1;i<=t;i++){
+
+        scanf("%d",&n);
+        minimal_distance=0;
+        for(j=0;j<n;j++){
+
+            scanf("%d",&array[j]);
+        }
+
+        sort(array,array+n);
+        for(j=n-1;j>0;j--){
+
+            minimal_distance=minimal_distance+array[j]-array[j-1];
+        }
+
+        minimal_distance=minimal_distance*2;
+
+
+
+        printf("%d\n",minimal_distance);
+
+
+
+
+
+    }
+
+
+
+
+
+    return 0;
+}
