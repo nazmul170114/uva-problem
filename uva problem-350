@@ -1,0 +1,34 @@
+#include<cstdio>
+using namespace std;
+int main()
+{
+    int Z,I,M,L,i=1,p,count;
+    while(scanf("%d%d%d%d",&Z,&I,&M,&L)!=EOF){
+
+            if(Z==0 && I==0 && M==0 && L==0){
+
+                return 0;
+            }
+
+            count=0;
+            p=(Z*L+I)%M;
+            L=p;
+
+            do{
+              p=(Z*p+I)%M;
+              count++;
+
+
+
+            }while(p!=L);
+            printf("Case %d: %d\n",i++,count);
+
+
+
+    }
+
+
+
+
+    return 0;
+}
