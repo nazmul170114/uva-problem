@@ -1,0 +1,18 @@
+#include<cstdio>
+using namespace std;
+int main()
+{
+int t,m,n,i,minimum_number_of_sonars ;
+scanf("%d",&t);
+for(i=1;i<=t;i++){
+    scanf("%d%d",&m,&n);
+    minimum_number_of_sonars=(m/3)*(n/3);
+    printf("%d\n",minimum_number_of_sonars);
+
+}
+
+
+
+
+    return 0;
+}
