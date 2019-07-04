@@ -1,0 +1,25 @@
+#include<cstdio>
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int t,n,i,answer;
+    scanf("%d",&t);
+    for(i=1;i<=t;i++){
+
+         scanf("%d",&n);
+         answer=((((((n*567)/9)+7492)*235)/47)-498);
+         answer=answer/10;
+         answer=answer%10;
+         answer=abs(answer);
+         printf("%d\n",answer);
+
+
+    }
+
+
+
+
+
+    return 0;
+}
