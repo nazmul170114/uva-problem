@@ -1,0 +1,15 @@
+#include<cstdio>
+using namespace std;
+int main()
+{
+    int m,n,value;
+    while(scanf("%d%d",&m,&n)!=EOF){
+
+        value=m*n-1;
+        printf("%d\n",value);
+    }
+
+
+
+    return 0;
+}
